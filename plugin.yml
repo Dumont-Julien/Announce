@@ -1,0 +1,9 @@
+name: Announce
+version: 1.0.0
+main: Announce\Main
+api: 4.0.0
+author: NewTheBuilder
+permissions:
+  announce.use:
+    default: op
+    description: "Allow permission for use the /announce"
