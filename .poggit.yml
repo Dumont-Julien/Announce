@@ -5,5 +5,5 @@ branches:
 projects:
   Announce:
     path: ""
-    icon: ""
+    icon: "icon.png"
 ...
