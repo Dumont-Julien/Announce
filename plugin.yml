@@ -1,6 +1,6 @@
 name: Announce
 version: 1.0.0
-main: Announce\Main
+main: NewTheBuilder\Announce\Main
 api: 4.0.0
 author: NewTheBuilder
 permissions:
