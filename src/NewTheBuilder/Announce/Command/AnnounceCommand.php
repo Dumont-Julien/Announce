@@ -11,7 +11,7 @@ use pocketmine\utils\Config;
 class AnnounceCommand extends Command {
 
     public function __construct() {
-        parent::__construct("announce", "Allows you to make an announcement on the server", "/announce <message>", ["say"]);
+        parent::__construct("announce", "Allows you to make an announcement on the server", "/announce <message>");
     }
 
     public function execute(CommandSender $sender, string $commandLabel, array $args): bool {
