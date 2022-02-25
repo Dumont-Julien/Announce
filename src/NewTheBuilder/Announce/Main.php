@@ -24,7 +24,6 @@ class Main extends PluginBase implements Listener {
             "Color" => "§e"
         ]);
         $config->save();
-        $this->getServer()->getCommandMap()->unregister($this->getCommand("say"));
         $this->getServer()->getCommandMap()->register("Announce", new AnnounceCommand());
     }
 
