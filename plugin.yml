@@ -3,6 +3,9 @@ version: 1.0.0
 main: NewTheBuilder\Announce\Main
 api: 4.0.0
 author: NewTheBuilder
+softdepend:
+  - EconomyAPI
+  - BedrockEconomy
 permissions:
   announce.use:
     default: op

@@ -1,0 +1,25 @@
+#
+#   _____                                                   __________.__               .__
+#  /  _  \   ____   ____   ____  __ __  ____   ____  ____   \______   \  |  __ __  ____ |__| ____
+# /  /_\  \ /    \ /    \ /  _ \|  |  \/    \_/ ___\/ __ \   |     ___/  | |  |  \/ ___\|  |/    \
+#/    |    \   |  \   |  (  <_> )  |  /   |  \  \__\  ___/   |    |   |  |_|  |  / /_/  >  |   |  \
+#\____|__  /___|  /___|  /\____/|____/|___|  /\___  >___  >  |____|   |____/____/\___  /|__|___|  /
+#        \/     \/     \/                  \/     \/    \/                      /_____/         \/
+#
+
+#global command
+Prefix: "[§cANNOUNCE§f] "
+Color: "§e"
+
+Time_remaining: "You still have {TIME}§f."
+
+Console_Command: "§cUse this command in-game"
+
+announce_price: 100
+Player_announce_prefix: "[§9ANNOUNCE §f- §Player§f] {PLAYER} §9-> §f{ANNOUNCE}"
+not_money: "§cYou do not have enough money"
+
+#Form
+title: "§9- §fBuyAnnounce §9-"
+content: "§9-> §fBuy announce !"
+input: "§9-> §fChoose your announce"

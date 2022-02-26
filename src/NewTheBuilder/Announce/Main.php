@@ -2,11 +2,10 @@
 
 namespace NewTheBuilder\Announce;
 
-use JsonException;
 use NewTheBuilder\Announce\Command\AnnounceCommand;
+use NewTheBuilder\Announce\Command\Buyannounce;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\Config;
 
 class Main extends PluginBase implements Listener {
 
@@ -14,17 +13,15 @@ class Main extends PluginBase implements Listener {
 
     /**
      * @return void
-     * @throws JsonException
      */
     protected function onEnable(): void {
         $this->getServer()->getPluginManager()->registerEvents($this,$this);
         self::$main = $this;
-        $config = new Config($this->getDataFolder() . "Config.yml", Config::YAML, [
-            "Prefix" => "[§cANNOUNCE§f] ",
-            "Color" => "§e"
-        ]);
-        $config->save();
+        if (!file_exists($this->getDataFolder() . "Config.yml")){
+            $this->saveResource("Config.yml");
+        }
         $this->getServer()->getCommandMap()->register("Announce", new AnnounceCommand());
+        $this->getServer()->getCommandMap()->register("Announce", new Buyannounce());
     }
 
     public static function getInstance() : Main {
